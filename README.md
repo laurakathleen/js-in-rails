@@ -16,7 +16,7 @@
 
 Just clone, bundle, `rake db:setup` and then run `rails server`.
 
-#### Challenge 1 - Whack A Mole
+#### Challenge 1 - Whack A Mole   ----------------- SKIP FOR NOW
 
 Use `remote: true` to make the delete request.  Be sure to tie your javascript into the appropriate [jquery_ujs](https://github.com/rails/jquery-ujs/wiki/ajax) ajax events.
 
