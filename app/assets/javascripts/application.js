@@ -23,6 +23,21 @@ var page_view_count = {
 };
 
 
+$(document).on('page:change', function(){
+  var current_path = location.pathname.split("/")[1] || "home";
+  page_view_count[current_path] += 1;
+  $("#" + current_path + " .view_count.badge").text(page_view_count[current_path]);
+});
+
+$(document).on('page:change', function(){
+  var color = location.pathname.split("/")[1];
+  console.log(color);
+  if ('background-color' != color) {
+  	return $("body").css("background-color", color);
+  }
+});
+
+
 
 
 
